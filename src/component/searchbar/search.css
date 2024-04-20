@@ -10,7 +10,7 @@ width: 568px;
 height: 35px;
 border-radius: 8px 0px 0px 8px;
 border: 1px 0px 0px 0px;
-opacity: 0px;
+/* opacity: 0px; */
 border: 1px solid var(--color-black);
 background-color: #FFFFFF;
 
