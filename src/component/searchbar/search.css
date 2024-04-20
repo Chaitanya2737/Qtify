@@ -1,0 +1,26 @@
+
+.Wrapper{
+ display: flex;
+ align-items: center;
+
+}
+
+.inputsize{
+width: 568px;
+height: 35px;
+border-radius: 8px 0px 0px 8px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+border: 1px solid var(--color-black);
+
+}
+
+.button{
+    border-radius: 0px 8px 8px 0px;
+    border-left: none;
+  
+  border: 1px solid var(--color-black);
+  height: 100%;
+  cursor: pointer;
+  padding: 10px 20px; 
+}

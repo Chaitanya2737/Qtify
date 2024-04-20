@@ -1,0 +1,9 @@
+.position{
+    display: flex;
+}
+.set{
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+
