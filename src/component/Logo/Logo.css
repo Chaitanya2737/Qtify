@@ -1,5 +1,6 @@
 .position{
     display: flex;
+    margin: 14px;
 }
 .set{
     position: absolute;
