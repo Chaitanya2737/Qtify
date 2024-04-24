@@ -7,14 +7,17 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
+    
 }
 
 .text {
-    line-height: 10px;
+    line-height: 40px;
     font-family: Poppins;
     font-size: 32px;
     font-weight: 600;
     text-align: center;
+    text-wrap: wrap;
+
 }
 
 .text > h2{
