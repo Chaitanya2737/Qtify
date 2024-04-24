@@ -32,7 +32,7 @@ const GridData = ({type , data}) => {
               </div>
             </div>
             <div className="titleWrapper">
-              <p>{title}</p>
+              <p style={{color:"white"}}>{title}</p>
             </div>
           </div>
         </Tooltip>
