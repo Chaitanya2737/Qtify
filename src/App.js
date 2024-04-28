@@ -2,15 +2,17 @@ import React, { useEffect, useState } from 'react'
 import Navbar from './component/Navbar/Navbar'
 import Hero from './component/Hero Section/Hero'
 import Main from './component/main/Main'
-import { getAllSong } from './api/api'
+import { getAllAlbum, getAllSong } from './api/api'
 
 const App = () => {
 
   const [getSong, setGetSong] = useState([]);
+
+  const [newAlbumSongs, setNewAlbumSongs] = useState([])
   const fetchData = async () => {
     try {
       const data = await getAllSong();
-      setGetSong(data);
+      setNewAlbumSongs(data);
     } catch (error) {
       console.log(error);
     }
@@ -25,12 +27,24 @@ const App = () => {
         setCarouselToggle(!carouselToggle);
     }
 
+
+    const generateNewAlbumSongs=async()=>{
+      try{
+        const res= await getAllAlbum();
+      setNewAlbumSongs(res);
+      }
+      catch(error){
+        console.log(error);
+        return null;
+      } 
+    }
+
   return (
     <div>
       <Navbar />
       <Hero />
       <Main type='album' title='Top Albums' data={getSong}/>
-      {/* <Main type='album' title='New Albums' data={newAlbumSongs}/> */}
+      <Main type='album' title='New Albums' data={newAlbumSongs}/>
     </div>
   )
 }
