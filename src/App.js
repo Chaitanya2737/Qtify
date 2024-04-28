@@ -40,7 +40,7 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
-      <Main type="album" title="Top Albums" data={albums} />
+      <Main type="album" title="Top Albums" data={songs} />
       <Main type="album" title="New Albums" data={albums} />
     </div>
   );
