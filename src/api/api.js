@@ -23,3 +23,18 @@ export  const getAllAlbum = async() => {
     return null
   }
 }
+
+
+
+
+
+
+export const fetchSongs=async()=>{
+  try{
+      const res=await axios.get("https://qtify-backend-labs.crio.do/songs")
+      return res.data;
+  }
+  catch(error){
+      return null;
+  }
+}

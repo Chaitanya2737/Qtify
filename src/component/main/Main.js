@@ -41,12 +41,14 @@ const Main = ({type,title,data,toggle=true}) => {
                 {data.map((album)=>(
                     //show card here
                     <GridData data={album} type={type} key={album.id}/>
+                    
                 ))}
                 </div>
             ):(
-              <div>
+                <div>
               {/* show carousel here */}
               <Carousel data={data} renderCardComponent={(data)=><GridData data={data} type={type}/>}/>
+              <br style={{color: "#34C94B"}}/>
               </div>  
             )}
             </div>
